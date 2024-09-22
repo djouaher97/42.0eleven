@@ -66,14 +66,18 @@ a:hover {
 }
 
 .sezione-immagine {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 .sezione-immagine img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;  /* L'immagine non supererà mai il 100% della larghezza del contenitore */
+  height: auto;     /* Mantiene le proporzioni dell'immagine */
 }
-
+@media (max-width: 600px) {
+  .sezione-immagine {
+      margin: 10px;  /* Riduce il margine sui dispositivi più piccoli */
+  }
+}
 @media (max-width: 768px) {
  
   body {
