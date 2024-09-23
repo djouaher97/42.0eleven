@@ -99,17 +99,10 @@ a:hover {
   width: 100%;
 }
 /* carosello */
-.carousel-item img {
-  height: 600px; /* Puoi personalizzare l'altezza */
-  object-fit: cover;
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-
 
 @media (max-width: 600px) {
   .sezione-immagine {
