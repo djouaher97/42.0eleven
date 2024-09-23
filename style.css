@@ -93,16 +93,23 @@ a:hover {
   height: 42px;
 }
 
-.parco{
-  background-image:url("parco_europa.jpg");
-  background-size: cover;
-  height: 100%;
-}
 /* This will style any <img> element in .parent div */
 .parent img {
   height: 100%;
   width: 100%;
 }
+/* carosello */
+.carousel-item img {
+  height: 600px; /* Puoi personalizzare l'altezza */
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
 
 @media (max-width: 600px) {
   .sezione-immagine {
