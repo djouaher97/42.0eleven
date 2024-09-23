@@ -1,5 +1,5 @@
 body{
-  font-family: "Nunito", "sans-serif";
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -73,6 +73,23 @@ a:hover {
   max-width: 100%;  /* L'immagine non supererà mai il 100% della larghezza del contenitore */
   height: auto;     /* Mantiene le proporzioni dell'immagine */
 }
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Rapporto 16:9 */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
 @media (max-width: 600px) {
   .sezione-immagine {
       margin: 10px;  /* Riduce il margine sui dispositivi più piccoli */
