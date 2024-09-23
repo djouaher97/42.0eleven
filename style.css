@@ -88,7 +88,21 @@ a:hover {
   height: 100%;
   border: 0;
 }
+.parent {
+  width: 42px; /* I took the width from your post and placed it in css */
+  height: 42px;
+}
 
+.parco{
+  background-image:url("parco_europa.jpg");
+  background-size: cover;
+  height: 100%;
+}
+/* This will style any <img> element in .parent div */
+.parent img {
+  height: 100%;
+  width: 100%;
+}
 
 @media (max-width: 600px) {
   .sezione-immagine {
